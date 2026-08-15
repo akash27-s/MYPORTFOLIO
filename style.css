@@ -971,3 +971,36 @@ a, button, .card, .project-card, .certificate-card {
     transform: translateY(-3px) scale(1.1);
     color: #00ffff;
 }
+/* Sunset Amber & Orange Theme */
+:root {
+    --bg-color: #0b0f19;
+    --card-bg: #111827;
+    --accent-color: #f97316; /* Sunset Orange */
+}
+
+/* Apply theme colors to buttons, active states, and highlights */
+.btn, .pdf-download-btn {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+.btn:hover, .pdf-download-btn:hover {
+    background-color: #ea580c;
+    box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
+}
+
+/* Headings and Logo Accent */
+.logo, .home-text h3 span, .heading {
+    color: var(--accent-color);
+}
+
+/* Cards and Interactive Elements Hover Effect */
+.card:hover, .project-card:hover, .certificate-card:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(249, 115, 22, 0.25);
+}
+
+/* Social Icons Hover */
+.social a:hover {
+    color: var(--accent-color);
+}
