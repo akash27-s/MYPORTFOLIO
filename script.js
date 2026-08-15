@@ -50,6 +50,14 @@ new Typed(".typing", {
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
+// ================================
+// Scroll Reveal Animation
+// ================================
+
+const revealElements = document.querySelectorAll(
+".home-text,.home-img,.about,.skills,.projects,.certifications,.card,.project-card,.cert-card"
+);
+
 window.addEventListener("scroll", () => {
 
     let current = "";
