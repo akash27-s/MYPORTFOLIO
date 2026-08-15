@@ -971,3 +971,63 @@ a, button, .card, .project-card, .certificate-card {
     transform: translateY(-3px) scale(1.1);
     color: #00ffff;
 }
+/* Background Base and Glowing Orbs */
+body {
+    background-color: var(--bg-color, #0b0f19);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Floating Glow Orbs Effect */
+.glow-orb {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(249, 115, 22, 0.15); /* Amber/Orange Glow */
+    border-radius: 50%;
+    filter: blur(80px);
+    animation: floatOrbs 10s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+    top: -100px;
+    left: -100px;
+}
+
+.orb-2 {
+    bottom: -100px;
+    right: -100px;
+    animation-delay: 5s;
+}
+
+@keyframes floatOrbs {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    100% {
+        transform: translateY(50px) scale(1.1);
+    }
+}
+
+/* Subtle Gradient Border Accents for Cards */
+.project-card, .certificate-card, .card {
+    position: relative;
+    background: var(--card-bg, #111827);
+    border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.project-card:hover, .certificate-card:hover {
+    border-color: #f97316;
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
