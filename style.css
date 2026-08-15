@@ -941,3 +941,33 @@ html{
         color: #ffffff;
     }
 }
+/* Smooth Transitions for Interactive Elements */
+a, button, .card, .project-card, .certificate-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Button Hover Effects */
+.btn:hover, .pdf-download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* Skill Cards Micro-Interaction */
+.card:hover {
+    transform: translateY(-4px);
+    border-color: #00ffff;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
+/* Project Cards Micro-Interaction */
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: #00ffff;
+    box-shadow: 0 10px 25px rgba(0, 255, 255, 0.25);
+}
+
+/* Social Icons Hover Animation */
+.social a:hover {
+    transform: translateY(-3px) scale(1.1);
+    color: #00ffff;
+}
