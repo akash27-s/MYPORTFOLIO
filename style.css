@@ -584,3 +584,6 @@ footer{
     color:#00e5ff;
     margin-right:8px;
 }
+html{
+    scroll-behaviour: smooth;
+}
