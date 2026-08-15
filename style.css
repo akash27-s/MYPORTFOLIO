@@ -670,3 +670,121 @@ footer{
 html{
     scroll-behaviour: smooth;
 }
+/* Certifications Design Refresh */
+.certifications {
+    padding: 80px 9% 50px;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.certificate-card {
+    background: #0b0f19;
+    border: 2px solid rgba(0, 255, 255, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-card:hover {
+    border-color: #00ffff;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 255, 255, 0.2);
+}
+
+.certificate-img-container {
+    width: 100%;
+    height: 240px;
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(0, 255, 255, 0.1);
+}
+
+.certificate-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps full certificate document visible without cutting borders */
+    transition: 0.3s ease;
+}
+
+.certificate-card:hover .certificate-img-container img {
+    transform: scale(1.03);
+}
+
+.certificate-content {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: linear-gradient(135deg, #0b0f19, #111827);
+}
+
+.certificate-content h3 {
+    font-size: 1.25rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.certificate-content > p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 12px;
+}
+
+.certificate-meta {
+    font-size: 0.85rem;
+    color: #00ffff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.cert-details {
+    background: rgba(17, 24, 39, 0.6);
+    border-left: 3px solid #00ffff;
+    padding: 10px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cert-details strong {
+    color: #00ffff;
+}
+
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 16px;
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+    margin-top: auto;
+}
+
+.pdf-download-btn:hover {
+    background: #00ffff;
+    color: #000000;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
