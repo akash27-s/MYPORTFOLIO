@@ -788,3 +788,109 @@ html{
     color: #000000;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
+/* Certifications Layout Fix for Mobile & PC */
+.certifications {
+    padding: 60px 5% 40px;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.certificate-card {
+    background: #0b0f19;
+    border: 2px solid rgba(0, 255, 255, 0.15);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-img-container {
+    width: 100%;
+    height: 200px; /* Fixed height so images never blow up to full size on mobile */
+    background: #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps the certificate fully visible within the box */
+}
+
+.certificate-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: linear-gradient(135deg, #0b0f19, #111827);
+}
+
+.certificate-content h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.certificate-content > p {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-bottom: 10px;
+}
+
+.certificate-meta {
+    font-size: 0.8rem;
+    color: #00ffff;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.cert-details {
+    background: rgba(17, 24, 39, 0.6);
+    border-left: 3px solid #00ffff;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #d1d5db;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cert-details strong {
+    color: #00ffff;
+}
+
+.pdf-download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 9px 14px;
+    background: transparent;
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: auto;
+    transition: 0.3s ease;
+}
+
+.pdf-download-btn:hover {
+    background: #00ffff;
+    color: #000000;
+}
