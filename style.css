@@ -317,6 +317,89 @@ section{
     color:#cfcfcf;
     line-height:1.8;
 }
+/* Certifications Section Styling */
+.certifications {
+    padding: 80px 9% 50px;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certificate-card {
+    background: #111;
+    border: 2px solid rgba(0, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.certificate-card:hover {
+    border-color: cyan;
+    transform: translateY(-5px);
+}
+
+.certificate-img-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.certificate-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.certificate-card:hover .certificate-img-container img {
+    transform: scale(1.05);
+}
+
+.certificate-content {
+    padding: 20px;
+    background: linear-gradient(135deg, #0b0f19, #111827);
+}
+
+.certificate-content h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.certificate-content p {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    margin-bottom: 15px;
+}
+
+.certificate-meta {
+    font-size: 0.85rem;
+    color: #00ffff;
+    margin-bottom: 15px;
+}
+
+.pdf-download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid cyan;
+    color: cyan;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pdf-download-btn:hover {
+    background: cyan;
+    color: #000;
+}
 
 .project-card:hover{
     transform:translateY(-10px);
